@@ -1,0 +1,32 @@
+[
+  {
+    "img": "/services1.png",
+    "title": "Shower Enclosures",
+    "where": "/nextpage"
+  },
+  {
+    "img": "/services2.png",
+    "title": "Bathroom Renovation",
+    "where": "/nextpage"
+  },
+  {
+    "img": "/services2.png",
+    "title": "Kitchen Remodeling",
+    "where": "/nextpage"
+  },
+  {
+    "img": "/services1.png",
+    "title": "Interior Design",
+    "where": "/nextpage"
+  },
+  {
+    "img": "/services1.png",
+    "title": "Exterior Facades",
+    "where": "/nextpage"
+  },
+  {
+    "img": "/services2.png",
+    "title": "Home Extensions",
+    "where": "/nextpage"
+  }
+]

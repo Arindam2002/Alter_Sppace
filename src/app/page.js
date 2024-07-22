@@ -1,15 +1,24 @@
-/* eslint-disable @next/next/no-img-element */
 import Image from 'next/image';
 import testimonials from './testimonials.json';
 import TestimonialCard from '@/components/Testimonial/TestimonialCard';
+import services from './services.json';
+import ServicesCard from '@/components/ServicesCard/ServicesCard';
 
 import mainimg from '../../public/assets/mainimg.png';
+
+import { FaGlassCheers, FaDollarSign, FaTools } from 'react-icons/fa';
 
 export default function Home() {
   return (
     <div>
       <div className="main-content">
-        <img src={mainimg.src} alt="mainimg" className="main-image" />
+        <Image
+          src={mainimg}
+          alt="mainimg"
+          className="main-image"
+          width={500}
+          height={300}
+        />
 
         <div className="main-description">
           <h2>
@@ -88,10 +97,44 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="main-details"></div>
+      <div className="specifications">
+        <div className="specification-item">
+          <div className="specification-icon">
+            <FaGlassCheers />
+          </div>
+          <p>Glass specification consultation</p>
+        </div>
+        <div className="specification-item">
+          <div className="specification-icon">
+            <FaDollarSign />
+          </div>
+          <p>Competitive pricing</p>
+        </div>
+        <div className="specification-item">
+          <div className="specification-icon">
+            <FaTools />
+          </div>
+          <p>Trained installation engineers</p>
+        </div>
+      </div>
+
+      <div className="services">
+        <h2 className="services-heading">Our Services</h2>
+        <div className="services-cards">
+          {services.map((service, index) => (
+            <ServicesCard
+              key={index}
+              index={index}
+              img={service.img}
+              title={service.title}
+              where={service.where}
+            />
+          ))}
+        </div>
+      </div>
 
       <div className="testimonial">
-        <h2 className="testimonial-heading">What the People Thinks About Us</h2>
+        <h2 className="testimonial-heading">What the People Think About Us</h2>
         <div className="testimonial-cards">
           {testimonials.map((testimonial, index) => (
             <TestimonialCard

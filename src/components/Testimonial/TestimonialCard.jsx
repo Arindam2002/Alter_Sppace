@@ -6,8 +6,12 @@ const TestimonialCard = ({ img, name, address, testimonial }) => {
   return (
     <div className="testimonial-card">
       <div className="testimonial-card-header">
-        <img src={img.src} alt="user" className="testimonial-card-img" />
-
+        {/* <img src={img.src} alt="user" className="testimonial-card-img" /> */}
+        <img
+          src={`/assets/${img}`}
+          alt="user"
+          className="testimonial-card-img"
+        />
         <div className="testimonial-card-info">
           <h2 className="testimonial-card-name">{name}</h2>
           <p className="testimonial-card-address">{address}</p>
