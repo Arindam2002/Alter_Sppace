@@ -1,0 +1,56 @@
+.testimonial-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px;
+  gap: 10px;
+  border-radius: 50px 0 50px 0;
+  border: 2px solid #e5e7eb;
+  background-color: white;
+  width: 340px;
+
+  &-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &-img {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+  }
+
+  &-info {
+    display: flex;
+    flex-direction: column;
+    width: 183px;
+  }
+
+  &-name {
+    color: #292f36;
+    font-family: 'DM Serif Display', serif;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 1.25;
+    letter-spacing: 0.4px;
+  }
+
+  &-address {
+    color: #4d5053;
+    font-family: 'Jost', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.25;
+    letter-spacing: 0.32px;
+  }
+
+  &-text {
+    color: #4d5053;
+    font-family: 'Jost', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.5;
+    letter-spacing: 0.2px;
+  }
+}
