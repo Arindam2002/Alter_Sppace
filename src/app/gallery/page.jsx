@@ -1,13 +1,37 @@
+/* eslint-disable @next/next/no-img-element */
 import React from 'react';
 import Navbar from '@/components/Navbar/Navbar';
-import Link from 'next/link';
+import './gallery.scss';
+
+import services1 from '/public/assets/services1.png';
+import services2 from '/public/assets/services2.png';
 
 const Gallery = () => {
   return (
-    <div>
+    <div className="gallery">
       <Navbar />
 
-      <h2>this is gallery </h2>
+      <h2>Gallery</h2>
+      <div className="gallery-box">
+        <div className="gallery-box-img">
+          <img src={services1.src} alt="" />
+        </div>
+        <div className="gallery-box-img">
+          <img src={services2.src} alt="" />
+        </div>
+        <div className="gallery-box-img">
+          <img src={services1.src} alt="" />
+        </div>
+        <div className="gallery-box-img">
+          <img src={services2.src} alt="" />
+        </div>
+        <div className="gallery-box-img">
+          <img src={services1.src} alt="" />
+        </div>
+        <div className="gallery-box-img">
+          <img src={services2.src} alt="" />
+        </div>
+      </div>
     </div>
   );
 };
