@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react';
 import Navbar from '@/components/Navbar/Navbar';
+import Footer from '@/components/Footer/Footer';
 import './gallery.scss';
 
 import services1 from '/public/assets/services1.png';
@@ -12,26 +13,30 @@ const Gallery = () => {
       <Navbar />
 
       <h2>Gallery</h2>
-      <div className="gallery-box">
-        <div className="gallery-box-img">
-          <img src={services1.src} alt="" />
-        </div>
-        <div className="gallery-box-img">
-          <img src={services2.src} alt="" />
-        </div>
-        <div className="gallery-box-img">
-          <img src={services1.src} alt="" />
-        </div>
-        <div className="gallery-box-img">
-          <img src={services2.src} alt="" />
-        </div>
-        <div className="gallery-box-img">
-          <img src={services1.src} alt="" />
-        </div>
-        <div className="gallery-box-img">
-          <img src={services2.src} alt="" />
+      <div className="main-gallery">
+        <div className="gallery-box">
+          <div className="gallery-box-img">
+            <img src={services1.src} alt="" />
+          </div>
+          <div className="gallery-box-img">
+            <img src={services2.src} alt="" />
+          </div>
+          <div className="gallery-box-img">
+            <img src={services1.src} alt="" />
+          </div>
+          <div className="gallery-box-img">
+            <img src={services2.src} alt="" />
+          </div>
+          <div className="gallery-box-img">
+            <img src={services1.src} alt="" />
+          </div>
+          <div className="gallery-box-img">
+            <img src={services2.src} alt="" />
+          </div>
         </div>
       </div>
+
+      <Footer />
     </div>
   );
 };
