@@ -15,28 +15,28 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaFacebook color="#F8952D" />
+              <FaFacebook className="social-icons-logo" color="#F8952D" />
             </a>
             <a
               href="https://www.instagram.com/altersppacesolutions?igsh=MTlnYnBjNDZrbGY5aQ=="
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaInstagram color="#F8952D" />
+              <FaInstagram className="social-icons-logo" color="#F8952D" />
             </a>
             <a
               href="https://www.linkedin.com/in/altersppacesolutions?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaLinkedin color="#F8952D" />
+              <FaLinkedin className="social-icons-logo" color="#F8952D" />
             </a>
             <a
               href="https://youtube.com/@altersppace4159?si=_LzuHzp352-2lYYI"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaYoutube color="#F8952D" />
+              <FaYoutube className="social-icons-logo" color="#F8952D" />
             </a>
           </div>
         </div>

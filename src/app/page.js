@@ -3,15 +3,35 @@ import testimonials from './testimonials.json';
 import TestimonialCard from '@/components/Testimonial/TestimonialCard';
 import services from './services.json';
 import ServicesCard from '@/components/ServicesCard/ServicesCard';
+import Navbar from '@/components/Navbar/Navbar';
 import Footer from '@/components/Footer/Footer';
 
-import mainimg from '../../public/assets/mainimg.png';
+import mainimg from '/public/assets/mainimg.png';
+import hero from '/public/assets/hero.png';
 
 import { FaSearch, FaDollarSign, FaLightbulb, FaThLarge } from 'react-icons/fa';
 
 export default function Home() {
   return (
     <div>
+      <div className="hero-section">
+        <Navbar />
+
+        <div className="hero-section-contents">
+          <div className="hero-section-contents-main">
+            <h1>Unique, Efficient and Cost Effective Solutions</h1>
+            <p>
+              ALTER SPPACE caters in Glass Partitions, Facades & related
+              products and serve its clients with the goal of optimizing the
+              value of their construction investment. We work to identify and
+              deliver outstanding value in a manner that will result in high
+              quality, cost efficient and elegant outcomes.
+            </p>
+
+            <a href="cta-btn">Contact Us</a>
+          </div>
+        </div>
+      </div>
       <div className="main-content">
         <Image
           src={mainimg}
