@@ -3,10 +3,11 @@ import testimonials from './testimonials.json';
 import TestimonialCard from '@/components/Testimonial/TestimonialCard';
 import services from './services.json';
 import ServicesCard from '@/components/ServicesCard/ServicesCard';
+import Footer from '@/components/Footer/Footer';
 
 import mainimg from '../../public/assets/mainimg.png';
 
-import { FaGlassCheers, FaDollarSign, FaTools } from 'react-icons/fa';
+import { FaSearch, FaDollarSign, FaLightbulb, FaThLarge } from 'react-icons/fa';
 
 export default function Home() {
   return (
@@ -100,21 +101,44 @@ export default function Home() {
       <div className="specifications">
         <div className="specification-item">
           <div className="specification-icon">
-            <FaGlassCheers />
+            <FaSearch color="#F8952D" />
           </div>
           <p>Glass specification consultation</p>
+          <p className="specification-description">
+            Expert consultation on glass solutions to ensure the best fit for
+            your project needs.
+          </p>
         </div>
         <div className="specification-item">
           <div className="specification-icon">
-            <FaDollarSign />
+            <FaDollarSign color="#F8952D" />
           </div>
           <p>Competitive pricing</p>
+          <p className="specification-description">
+            Offering competitive pricing without compromising on quality or
+            service.
+          </p>
         </div>
         <div className="specification-item">
           <div className="specification-icon">
-            <FaTools />
+            <FaLightbulb color="#F8952D" />
           </div>
-          <p>Trained installation engineers</p>
+          <p>Innovative Solutions</p>
+          <p className="specification-description">
+            Cutting-edge architectural glass solutions tailored to enhance both
+            functionality and aesthetics.
+          </p>
+        </div>
+        <div className="specification-item">
+          <div className="specification-icon">
+            <FaThLarge color="#F8952D" />
+          </div>
+          <p>Comprehensive Range of Products</p>
+          <p className="specification-description">
+            Diverse product offerings, including glass partitions, windows,
+            railings, and shower enclosures, to suit various architectural
+            styles and requirements.
+          </p>
         </div>
       </div>
 
@@ -147,6 +171,8 @@ export default function Home() {
           ))}
         </div>
       </div>
+
+      <Footer />
     </div>
   );
 }

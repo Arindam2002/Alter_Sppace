@@ -118,7 +118,7 @@ body {
   align-items: center;
   width: 100%;
   flex-wrap: wrap;
-  gap: 90px;
+  gap: 60px;
   background: #f4f0ec;
   padding: 80px 20px;
 
@@ -136,7 +136,7 @@ body {
       align-items: center;
       background-color: #f4f4f4;
       border-radius: 50%;
-      font-size: 24px;
+      font-size: 2px;
       color: #f8952d;
 
       svg {
@@ -149,10 +149,14 @@ body {
       color: var(--font-dark, #292f36);
       text-align: center;
       font-family: Jost;
-      font-size: 20px;
+      font-size: 18px;
       font-weight: 400;
       line-height: 120%;
       letter-spacing: 0.2px;
+    }
+    .specification-description {
+      font-size: 16px;
+      max-width: 260px;
     }
   }
 }
