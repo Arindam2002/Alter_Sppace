@@ -99,6 +99,21 @@ body {
       }
     }
   }
+
+  @media screen and (max-width: 600px) {
+    .hero-section-contents {
+      .hero-section-contents-main {
+        h1 {
+          margin-top: 40px;
+          font-size: 40px;
+          z-index: -1;
+        }
+        p {
+          font-size: 16px;
+        }
+      }
+    }
+  }
 }
 
 .main-content {
