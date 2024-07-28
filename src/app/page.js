@@ -119,46 +119,48 @@ export default function Home() {
       </div>
 
       <div className="specifications">
-        <div className="specification-item">
-          <div className="specification-icon">
-            <FaSearch color="#F8952D" />
+        <div className="specifications-content">
+          <div className="specification-item">
+            <div className="specification-icon">
+              <FaSearch color="#F8952D" />
+            </div>
+            <p>Glass specification consultation</p>
+            <p className="specification-description">
+              Expert consultation on glass solutions to ensure the best fit for
+              your project needs.
+            </p>
           </div>
-          <p>Glass specification consultation</p>
-          <p className="specification-description">
-            Expert consultation on glass solutions to ensure the best fit for
-            your project needs.
-          </p>
-        </div>
-        <div className="specification-item">
-          <div className="specification-icon">
-            <FaDollarSign color="#F8952D" />
+          <div className="specification-item">
+            <div className="specification-icon">
+              <FaDollarSign color="#F8952D" />
+            </div>
+            <p>Competitive pricing</p>
+            <p className="specification-description">
+              Offering competitive pricing without compromising on quality or
+              service.
+            </p>
           </div>
-          <p>Competitive pricing</p>
-          <p className="specification-description">
-            Offering competitive pricing without compromising on quality or
-            service.
-          </p>
-        </div>
-        <div className="specification-item">
-          <div className="specification-icon">
-            <FaLightbulb color="#F8952D" />
+          <div className="specification-item">
+            <div className="specification-icon">
+              <FaLightbulb color="#F8952D" />
+            </div>
+            <p>Innovative Solutions</p>
+            <p className="specification-description">
+              Cutting-edge architectural glass solutions tailored to enhance
+              both functionality and aesthetics.
+            </p>
           </div>
-          <p>Innovative Solutions</p>
-          <p className="specification-description">
-            Cutting-edge architectural glass solutions tailored to enhance both
-            functionality and aesthetics.
-          </p>
-        </div>
-        <div className="specification-item">
-          <div className="specification-icon">
-            <FaThLarge color="#F8952D" />
+          <div className="specification-item">
+            <div className="specification-icon">
+              <FaThLarge color="#F8952D" />
+            </div>
+            <p>Comprehensive Range of Products</p>
+            <p className="specification-description">
+              Diverse product offerings, including glass partitions, windows,
+              railings, and shower enclosures, to suit various architectural
+              styles and requirements.
+            </p>
           </div>
-          <p>Comprehensive Range of Products</p>
-          <p className="specification-description">
-            Diverse product offerings, including glass partitions, windows,
-            railings, and shower enclosures, to suit various architectural
-            styles and requirements.
-          </p>
         </div>
       </div>
 
