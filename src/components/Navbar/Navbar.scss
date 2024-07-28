@@ -4,7 +4,7 @@
   justify-content: space-between;
   width: 100%;
   gap: 30px;
-  padding: 0 20px;
+  padding: 0 40px;
   z-index: 999;
 
   .navbar-logo {
@@ -13,11 +13,21 @@
 
   .navbar-items {
     display: flex;
-    gap: 20px;
+    width: 440px;
+    justify-content: space-between;
     font-family: 'Jost';
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 32px;
+
+    a {
+      border-bottom: 3px solid transparent;
+      transition: all 0.3s;
+
+      &:hover {
+        border-bottom: 3px solid #f8952d;
+      }
+    }
 
     @media (max-width: 700px) {
       position: absolute;

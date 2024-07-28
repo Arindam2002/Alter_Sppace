@@ -60,16 +60,19 @@ body {
     height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    // align-items: center;
     justify-content: center;
     padding: 20px 40px;
 
     .hero-section-contents-main {
+      // margin-left: 200px;
+      margin-left: 12%;
       transform: translateY(-60px);
       max-width: 750px;
       display: flex;
       flex-direction: column;
-      align-items: center;
+      // align-items: center;
+      align-items: flex-start;
       justify-content: center;
       gap: 20px;
 
@@ -78,23 +81,25 @@ body {
         font-family: 'DM Serif Display';
         font-size: 50px;
         font-weight: 400;
-        text-align: center;
+        // text-align: center;
       }
 
       p {
         color: #fff;
         font-family: Jost;
+        max-width: 640px;
         font-size: 18px;
         font-weight: 400;
         line-height: 32px;
-        text-align: center;
+        // text-align: center;
       }
 
       a {
         text-decoration: none;
         padding: 10px 20px;
         gap: 10px;
-        background: var(--logo-yellow, #f8952d);
+        border-radius: 5px;
+        background: #f8952d;
         color: #fff;
       }
     }
@@ -194,16 +199,22 @@ body {
 }
 
 .specifications {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
   align-items: center;
-  width: 100%;
-  flex-wrap: wrap;
   gap: 60px;
   background: #f4f0ec;
   padding: 80px 20px;
+  border: 2px solid black;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
 
   .specification-item {
+    border: 2px solid black;
+    width: fit-content;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -235,6 +246,7 @@ body {
       line-height: 120%;
       letter-spacing: 0.2px;
     }
+
     .specification-description {
       font-size: 16px;
       max-width: 260px;
