@@ -1,53 +1,85 @@
 import React from 'react';
-import { FaFacebook, FaInstagram, FaLinkedin, FaYoutube } from 'react-icons/fa';
+
+import {
+  LiaFacebook,
+  LiaInstagram,
+  LiaLinkedin,
+  LiaYoutube,
+} from 'react-icons/lia';
+
 import './Footer.scss';
 
 const Footer = () => {
+  const services = [
+    { title: 'Glass Partition', where: '/glasspartition' },
+    { title: 'Sliding Glass Partitions', where: '/slidingglasspartitions' },
+    { title: 'Windows', where: '/windows' },
+    { title: 'Railings', where: '/railings' },
+    { title: 'Shower Enclosures', where: '/showerenclosures' },
+    { title: 'Home Extensions', where: '/nextpage' },
+  ];
+
+  const pages = [
+    { title: 'Home', where: '/' },
+    { title: 'About Us', where: '/about' },
+    { title: 'Contact', where: '/contact' },
+    { title: 'Blog', where: '/blog' },
+  ];
+
   return (
     <div className="footer">
       <div className="main-div">
         <div className="footer-main-section">
           <h4>Alter Sppace</h4>
-          <p>Unique, Efficient and Cost Effective Solutions</p>
+          <p>Transforming Spaces with Elegance and Precision</p>
           <div className="social-icons">
             <a
               href="https://www.facebook.com/AlterSppaceSolutions?mibextid=ZbWKwL"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaFacebook className="social-icons-logo" color="#F8952D" />
+              <LiaFacebook className="social-icons-logo" color="#F8952D" />
             </a>
             <a
               href="https://www.instagram.com/altersppacesolutions?igsh=MTlnYnBjNDZrbGY5aQ=="
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaInstagram className="social-icons-logo" color="#F8952D" />
+              <LiaInstagram className="social-icons-logo" color="#F8952D" />
             </a>
             <a
               href="https://www.linkedin.com/in/altersppacesolutions?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaLinkedin className="social-icons-logo" color="#F8952D" />
+              <LiaLinkedin className="social-icons-logo" color="#F8952D" />
             </a>
             <a
               href="https://youtube.com/@altersppace4159?si=_LzuHzp352-2lYYI"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaYoutube className="social-icons-logo" color="#F8952D" />
+              <LiaYoutube className="social-icons-logo" color="#F8952D" />
             </a>
           </div>
         </div>
 
         <div className="footer-section">
           <h5>Services</h5>
-          <p>Kitchen</p>
-          <p>Living Area</p>
-          <p>Bathroom</p>
-          <p>Dining Hall</p>
-          <p>Bedroom</p>
+          {services.map((service, index) => (
+            <p key={index}>
+              <a href={service.where}>{service.title}</a>
+            </p>
+          ))}
+        </div>
+
+        <div className="footer-section">
+          <h5>Pages</h5>
+          {pages.map((page, index) => (
+            <p key={index}>
+              <a href={page.where}>{page.title}</a>
+            </p>
+          ))}
         </div>
 
         <div className="footer-section">
