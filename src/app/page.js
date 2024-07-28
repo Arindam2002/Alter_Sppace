@@ -3,13 +3,15 @@ import testimonials from './testimonials.json';
 import TestimonialCard from '@/components/Testimonial/TestimonialCard';
 import services from './services.json';
 import ServicesCard from '@/components/ServicesCard/ServicesCard';
+import Testimonials from '@/components/Testimonial/Testimonials';
 import Navbar from '@/components/Navbar/Navbar';
 import Footer from '@/components/Footer/Footer';
 
 import mainimg from '/public/assets/mainimg.png';
 import hero from '/public/assets/hero.png';
 
-import { FaSearch, FaDollarSign, FaLightbulb, FaThLarge } from 'react-icons/fa';
+import { FaSearch, FaLightbulb, FaThLarge } from 'react-icons/fa';
+import { FaIndianRupeeSign } from 'react-icons/fa6';
 
 export default function Home() {
   return (
@@ -132,7 +134,7 @@ export default function Home() {
           </div>
           <div className="specification-item">
             <div className="specification-icon">
-              <FaDollarSign color="#F8952D" />
+              <FaIndianRupeeSign color="#F8952D" />
             </div>
             <p>Competitive pricing</p>
             <p className="specification-description">
@@ -179,19 +181,8 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="testimonial">
-        <h2 className="testimonial-heading">What the People Think About Us</h2>
-        <div className="testimonial-cards">
-          {testimonials.map((testimonial, index) => (
-            <TestimonialCard
-              key={index}
-              img={testimonial.img}
-              name={testimonial.name}
-              address={testimonial.address}
-              testimonial={testimonial.testimonial}
-            />
-          ))}
-        </div>
+      <div className="testimonials-section">
+        <Testimonials testimonials={testimonials} />
       </div>
 
       <Footer />
