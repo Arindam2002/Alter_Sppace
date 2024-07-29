@@ -2,12 +2,12 @@
   {
     "img": "/services1.png",
     "title": "Glass Partition",
-    "where": "/glasspartition"
+    "where": "/glass-partition"
   },
   {
     "img": "/services2.png",
     "title": "Sliding Glass Partitions",
-    "where": "/slidingglasspartitions"
+    "where": "/sliding-glass-partitions"
   },
   {
     "img": "/services2.png",
@@ -22,11 +22,6 @@
   {
     "img": "/services1.png",
     "title": "Shower Enclosures ",
-    "where": "/showerenclosures "
-  },
-  {
-    "img": "/services2.png",
-    "title": "Home Extensions",
-    "where": "/nextpage"
+    "where": "/shower-enclosures "
   }
 ]

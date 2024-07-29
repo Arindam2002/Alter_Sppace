@@ -11,12 +11,11 @@ import './Footer.scss';
 
 const Footer = () => {
   const services = [
-    { title: 'Glass Partition', where: '/glasspartition' },
-    { title: 'Sliding Glass Partitions', where: '/slidingglasspartitions' },
+    { title: 'Glass Partition', where: '/glass-partition' },
+    { title: 'Sliding Glass Partitions', where: '/sliding-glass-partitions' },
     { title: 'Windows', where: '/windows' },
     { title: 'Railings', where: '/railings' },
-    { title: 'Shower Enclosures', where: '/showerenclosures' },
-    { title: 'Home Extensions', where: '/nextpage' },
+    { title: 'Shower Enclosures', where: '/shower-enclosures' },
   ];
 
   const pages = [

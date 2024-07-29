@@ -19,7 +19,7 @@ const Railings = () => {
       <section className="railings-sections">
         <div className="railings-sections-content">
           <div className="railings-sections-main">
-            <h2>Aluminium & Glass Railings: </h2>
+            <h2>Aluminium & Glass Railings</h2>
             <p>
               Our aluminium and glass railings offer a contemporary look with
               the strength and durability of aluminium combined with the
@@ -34,7 +34,7 @@ const Railings = () => {
       <section className="railings-sections">
         <div className="railings-sections-content">
           <div className="railings-sections-main">
-            <h2>Stainless Steel Railings: </h2>
+            <h2>Stainless Steel Railings</h2>
             <p>
               Stainless steel railings provide a sleek, modern appearance while
               being incredibly strong and resistant to corrosion. They are

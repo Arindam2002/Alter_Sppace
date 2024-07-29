@@ -7,7 +7,7 @@
     line-height: 125%;
     letter-spacing: 0.8px;
     text-align: center;
-    margin: 30px 0;
+    margin: 50px 0;
   }
 
   .glass-sections {
@@ -90,8 +90,9 @@
     .video-content {
       position: relative;
       width: 100%;
-      max-width: 1000px;
-      padding-bottom: 56.25%;
+      max-width: 750px;
+      // padding-bottom: 35%;
+      padding-bottom: 400px;
 
       iframe {
         position: absolute;
@@ -121,6 +122,10 @@
     .glass-sections:nth-of-type(even) img {
       border-radius: 0px 160px 0px 0px;
     }
+
+    .video .video-content {
+      max-width: 100%;
+    }
   }
 
   @media (max-width: 480px) {
@@ -131,6 +136,10 @@
 
     .glass-sections img {
       border-radius: 0;
+    }
+
+    .video .video-content {
+      padding-bottom: 70%;
     }
   }
 }

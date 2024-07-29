@@ -19,7 +19,7 @@ const GlassPartition = () => {
       <section className="glass-sections">
         <div className="glass-sections-content">
           <div className="glass-sections-main">
-            <h2>Fixed Glass Partitions: </h2>
+            <h2>Fixed Glass Partitions</h2>
             <p>
               Our fixed glass partitions are designed to create a seamless and
               elegant division of space, providing both functionality and
@@ -41,7 +41,7 @@ const GlassPartition = () => {
       <section className="glass-sections">
         <div className="glass-sections-content">
           <div className="glass-sections-main">
-            <h2>Modular Glass Partitions: </h2>
+            <h2>Modular Glass Partitions</h2>
             <p>
               Modular glass partitions offer flexibility and adaptability. They
               are ideal for spaces that require frequent layout changes,

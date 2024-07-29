@@ -18,7 +18,7 @@ const ShowerEnclosures = () => {
       <section className="shower-sections">
         <div className="shower-sections-content">
           <div className="shower-sections-main">
-            <h2>Shower Enclosures: </h2>
+            <h2>Shower Enclosures</h2>
             <p>
               Our shower enclosures are designed to provide a luxurious and
               functional showering experience. With a range of styles and

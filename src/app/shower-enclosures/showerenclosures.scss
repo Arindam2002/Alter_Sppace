@@ -1,4 +1,4 @@
-.sliding-glass {
+.shower {
   h1 {
     color: var(--font-dark, #292f36);
     font-family: 'DM Serif Display';
@@ -7,10 +7,10 @@
     line-height: 125%;
     letter-spacing: 0.8px;
     text-align: center;
-    margin: 30px 0;
+    margin: 50px 0;
   }
 
-  .sliding-glass-sections {
+  .shower-sections {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -19,7 +19,7 @@
     margin: 40px 0;
     padding: 0 20px;
 
-    .sliding-glass-content {
+    .shower-sections-content {
       display: flex;
       flex-wrap: nowrap;
       justify-content: space-between;
@@ -28,7 +28,7 @@
       width: 100%;
       max-width: 1000px;
 
-      .sliding-glass-main {
+      .shower-sections-main {
         display: flex;
         flex-direction: column;
         gap: 16px;
@@ -57,10 +57,11 @@
       img {
         border-radius: 0px 160px 0px 0px;
         flex-shrink: 0;
+        max-width: 350px;
       }
     }
 
-    &:nth-of-type(even) .sliding-glass-content {
+    &:nth-of-type(even) .shower-sections-content {
       flex-direction: row-reverse;
 
       img {
@@ -69,18 +70,18 @@
     }
   }
 
-  .sliding-video {
+  .shower-video {
     display: flex;
     justify-content: center;
     margin: 40px 0;
     width: 100%;
     padding: 20px;
 
-    .sliding-video-content {
+    .shower-video-content {
       position: relative;
       width: 100%;
-      max-width: 800px;
-      padding-bottom: 56.25%; /* 16:9 aspect ratio */
+      max-width: 750px;
+      padding-bottom: 400px;
 
       iframe {
         position: absolute;
@@ -94,32 +95,40 @@
   }
 
   @media (max-width: 768px) {
-    .sliding-glass-sections .sliding-glass-content {
+    .shower-sections .shower-sections-content {
       flex-wrap: wrap;
     }
 
-    .sliding-glass-sections .sliding-glass-main {
+    .shower-sections .shower-sections-main {
       max-width: 100%;
     }
 
-    .sliding-glass-sections img {
+    .shower-sections img {
       width: 100%;
       border-radius: 160px 0px 0px 0px;
     }
 
-    .sliding-glass-sections:nth-of-type(even) img {
+    .shower-sections:nth-of-type(even) img {
       border-radius: 0px 160px 0px 0px;
+    }
+
+    .shower-video .shower-video-content {
+      max-width: 100%;
     }
   }
 
   @media (max-width: 480px) {
-    .sliding-glass-sections .sliding-glass-content {
+    .shower-sections .shower-sections-content {
       flex-direction: column;
       align-items: center;
     }
 
-    .sliding-glass-sections img {
+    .shower-sections img {
       border-radius: 0;
+    }
+
+    .shower-video .shower-video-content {
+      padding-bottom: 60%;
     }
   }
 }
