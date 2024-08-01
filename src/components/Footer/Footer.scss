@@ -63,12 +63,17 @@
       }
 
       p {
+        cursor: pointer;
         color: #4d5053;
         font-family: Jost;
         font-size: 16px;
         font-weight: 400;
         line-height: 300%;
         letter-spacing: 0.18px;
+
+        &:hover {
+          cursor: pointer;
+        }
       }
     }
   }

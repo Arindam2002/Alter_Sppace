@@ -19,10 +19,10 @@ const Navbar = () => {
       <img src={logo.src} alt="Logo" className="navbar-logo" />
 
       <div className={`navbar-items ${isOpen ? 'open' : ''}`}>
-        <Link href="/">Home</Link>
-        <Link href="/about">About Us</Link>
-        <Link href="/features">Features</Link>
-        <Link href="/services">Services</Link>
+        <a href="/">Home</a>
+        <a href="/#about">About Us</a>
+        <a href="/#features">Features</a>
+        <a href="/#services">Services</a>
         <Link href="/gallery">Gallery</Link>
       </div>
 

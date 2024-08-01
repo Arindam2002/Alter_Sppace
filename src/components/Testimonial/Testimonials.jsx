@@ -44,14 +44,11 @@ const Testimonials = ({ testimonials }) => {
     timeoutRef.current = setTimeout(() => {
       setCurrentIndex((prevIndex) => {
         if (prevIndex === extendedTestimonials.length - 1) {
-          setTimeout(() => {
-            setCurrentIndex(1);
-          }, 500);
           return 1;
         }
-        return (prevIndex + 1) % extendedTestimonials.length;
+        return prevIndex + 1;
       });
-    }, 2500);
+    }, 3000);
 
     return () => {
       resetTimeout();
@@ -62,13 +59,27 @@ const Testimonials = ({ testimonials }) => {
     setCurrentIndex((prevIndex) =>
       prevIndex === 1 ? extendedTestimonials.length - 2 : prevIndex - 1
     );
+    console.log(currentIndex);
   };
 
   const nextTestimonial = () => {
     setCurrentIndex((prevIndex) =>
       prevIndex === extendedTestimonials.length - 1 ? 1 : prevIndex + 1
     );
+    console.log(currentIndex);
   };
+
+  useEffect(() => {
+    if (currentIndex === 0) {
+      setTimeout(() => {
+        setCurrentIndex(extendedTestimonials.length - 2);
+      }, 0);
+    } else if (currentIndex === extendedTestimonials.length - 1) {
+      setTimeout(() => {
+        setCurrentIndex(1);
+      }, 0);
+    }
+  }, [currentIndex, extendedTestimonials.length]);
 
   return (
     <div className="testimonial">

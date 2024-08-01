@@ -16,25 +16,27 @@ import { FaIndianRupeeSign } from 'react-icons/fa6';
 export default function Home() {
   return (
     <div>
-      <div className="hero-section">
+      <div id="home" className="hero-section">
         <Navbar />
 
         <div className="hero-section-contents">
           <div className="hero-section-contents-main">
-            <h1>Unique, Efficient and Cost Effective Solutions</h1>
+            <h1>Transforming Spaces with Elegance and Precision</h1>
             <p>
-              ALTER SPPACE caters in Glass Partitions, Facades & related
-              products and serve its clients with the goal of optimizing the
-              value of their construction investment. We work to identify and
-              deliver outstanding value in a manner that will result in high
-              quality, cost efficient and elegant outcomes.
+              Alter Sppace Solutions specializes in Glass Partitions, Slimline
+              Aluminium Windows, Glass Railings, and related products. Our
+              mission is to maximize the value of your construction investment
+              by delivering exceptional quality, cost-efficient, and elegant
+              solutions. We are committed to providing outstanding value and
+              superior results that meet your needs and exceed your
+              expectations.
             </p>
 
             <a href="cta-btn">Contact Us</a>
           </div>
         </div>
       </div>
-      <div className="main-content">
+      <div id="about" className="main-content">
         <Image
           src={mainimg}
           alt="mainimg"
@@ -44,27 +46,20 @@ export default function Home() {
         />
 
         <div className="main-description">
-          <h2>
-            We are professionals with an average of more than 15 yrs. of
-            experience
-          </h2>
+          <h2>Our Expertise and Vision</h2>
           <p>
-            We are a group of professionals with an average of more than 15 yrs.
-            of experience in SERVICE INDUSTRY in Indian as well as in
-            international market. In a short span of time we have accumulated an
-            impressive track record in this region of credibility and trust. To
-            reach out to more and more clients we have been investing in
-            grooming several interior designers and designing enthusiastic. We
-            firmly believe that the interior design industry in India is in its
-            nascent stage and will grow drastically and AlterSpace hope to
-            contribute immensely to the development of this industry as we build
-            on our credentials and accolades. Our team understands the
-            challenges of the home decor industry, especially balancing the
-            three most important pillars: Budget, Delivery Schedule, and
-            Creativity with durability.
+            With over 15 years of experience, our team has quickly established a
+            reputation for excellence. Guided by
+            <strong> Abhishek Singh Rajput</strong>, we deliver exceptional
+            quality and innovative solutions. We proudly serve clients across
+            <strong> Pune, Mumbai, Indore, Bhopal, Nasik</strong>, and beyond,
+            showcasing our commitment to elegance and precision along with
+            developing an impressive track record through successful
+            collaborations with architects, interior designers and design
+            enthusiasts.
           </p>
 
-          <div className="pillars-container">
+          {/* <div className="pillars-container">
             <div className="pillar">
               <div>
                 <svg
@@ -116,57 +111,67 @@ export default function Home() {
               </div>
               <p className="pillar-text">Budget Friendly</p>
             </div>
+          </div> */}
+
+          <div className="main-description-content">
+            <h3>Our Mission: </h3>
+            <p>
+              We harness the power of architectural glass to enhance
+              functionality and aesthetics. Dedicated to the growth of the
+              interior design industry, we balance budget, delivery schedules,
+              creativity, and durability with innovative solutions.
+            </p>
           </div>
         </div>
       </div>
 
-      <div className="specifications">
+      <div id="features" className="specifications">
         <div className="specifications-content">
           <div className="specification-item">
             <div className="specification-icon">
               <FaSearch color="#F8952D" />
             </div>
             <p>Glass specification consultation</p>
-            <p className="specification-description">
+            {/* <p className="specification-description">
               Expert consultation on glass solutions to ensure the best fit for
               your project needs.
-            </p>
+            </p> */}
           </div>
           <div className="specification-item">
             <div className="specification-icon">
               <FaIndianRupeeSign color="#F8952D" />
             </div>
             <p>Competitive pricing</p>
-            <p className="specification-description">
+            {/* <p className="specification-description">
               Offering competitive pricing without compromising on quality or
               service.
-            </p>
+            </p> */}
           </div>
           <div className="specification-item">
             <div className="specification-icon">
               <FaLightbulb color="#F8952D" />
             </div>
             <p>Innovative Solutions</p>
-            <p className="specification-description">
+            {/* <p className="specification-description">
               Cutting-edge architectural glass solutions tailored to enhance
               both functionality and aesthetics.
-            </p>
+            </p> */}
           </div>
           <div className="specification-item">
             <div className="specification-icon">
               <FaThLarge color="#F8952D" />
             </div>
             <p>Comprehensive Range of Products</p>
-            <p className="specification-description">
+            {/* <p className="specification-description">
               Diverse product offerings, including glass partitions, windows,
               railings, and shower enclosures, to suit various architectural
               styles and requirements.
-            </p>
+            </p> */}
           </div>
         </div>
       </div>
 
-      <div className="services">
+      <div id="services" className="services">
         <h2 className="services-heading">Our Services</h2>
         <div className="services-cards">
           {services.map((service, index) => (

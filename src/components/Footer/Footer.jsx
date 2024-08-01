@@ -20,9 +20,10 @@ const Footer = () => {
 
   const pages = [
     { title: 'Home', where: '/' },
-    { title: 'About Us', where: '/about' },
-    { title: 'Contact', where: '/contact' },
-    { title: 'Blog', where: '/blog' },
+    { title: 'About Us', where: '/#about' },
+    { title: 'Features', where: '/#features' },
+    { title: 'Services', where: '/#services' },
+    { title: 'Gallery', where: '/gallery' },
   ];
 
   return (
