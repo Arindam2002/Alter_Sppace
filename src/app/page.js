@@ -4,6 +4,7 @@ import TestimonialCard from '@/components/Testimonial/TestimonialCard';
 import services from './services.json';
 import ServicesCard from '@/components/ServicesCard/ServicesCard';
 import Testimonials from '@/components/Testimonial/Testimonials';
+import GetInTouch from '@/components/GetInTouch/GetInTouch';
 import Navbar from '@/components/Navbar/Navbar';
 import Footer from '@/components/Footer/Footer';
 
@@ -19,7 +20,11 @@ export default function Home() {
       <div id="home" className="hero-section">
         <Navbar />
 
-        <div className="hero-section-contents">
+        <div
+          className="hero-section-contents"
+          data-aos="fade-in"
+          data-aos-duration="800"
+        >
           <div className="hero-section-contents-main">
             <h1>Transforming Spaces with Elegance and Precision</h1>
             <p>
@@ -32,7 +37,7 @@ export default function Home() {
               expectations.
             </p>
 
-            <a href="cta-btn">Contact Us</a>
+            <a href="#contact">Contact Us</a>
           </div>
         </div>
       </div>
@@ -43,9 +48,15 @@ export default function Home() {
           className="main-image"
           width={500}
           height={300}
+          data-aos="fade-right"
+          data-aos-duration="800"
         />
 
-        <div className="main-description">
+        <div
+          className="main-description"
+          data-aos="fade-left"
+          data-aos-duration="800"
+        >
           <h2>Our Expertise and Vision</h2>
           <p>
             With over 15 years of experience, our team has quickly established a
@@ -127,7 +138,11 @@ export default function Home() {
 
       <div id="features" className="specifications">
         <div className="specifications-content">
-          <div className="specification-item">
+          <div
+            className="specification-item"
+            data-aos="fade-up"
+            data-aos-duration="800"
+          >
             <div className="specification-icon">
               <FaSearch color="#F8952D" />
             </div>
@@ -137,7 +152,11 @@ export default function Home() {
               your project needs.
             </p> */}
           </div>
-          <div className="specification-item">
+          <div
+            className="specification-item"
+            data-aos="fade-up"
+            data-aos-duration="800"
+          >
             <div className="specification-icon">
               <FaIndianRupeeSign color="#F8952D" />
             </div>
@@ -147,7 +166,11 @@ export default function Home() {
               service.
             </p> */}
           </div>
-          <div className="specification-item">
+          <div
+            className="specification-item"
+            data-aos="fade-up"
+            data-aos-duration="800"
+          >
             <div className="specification-icon">
               <FaLightbulb color="#F8952D" />
             </div>
@@ -157,7 +180,11 @@ export default function Home() {
               both functionality and aesthetics.
             </p> */}
           </div>
-          <div className="specification-item">
+          <div
+            className="specification-item"
+            data-aos="fade-up"
+            data-aos-duration="800"
+          >
             <div className="specification-icon">
               <FaThLarge color="#F8952D" />
             </div>
@@ -173,7 +200,11 @@ export default function Home() {
 
       <div id="services" className="services">
         <h2 className="services-heading">Our Services</h2>
-        <div className="services-cards">
+        <div
+          className="services-cards"
+          data-aos="fade-in"
+          data-aos-duration="800"
+        >
           {services.map((service, index) => (
             <ServicesCard
               key={index}
@@ -186,10 +217,17 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="testimonials-section">
+      <div
+        className="testimonials-section"
+        data-aos="fade-in"
+        data-aos-duration="800"
+      >
         <Testimonials testimonials={testimonials} />
       </div>
 
+      <div id="contact" data-aos="fade-in" data-aos-duration="800">
+        <GetInTouch />
+      </div>
       <Footer />
     </div>
   );

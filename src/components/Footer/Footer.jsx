@@ -27,7 +27,7 @@ const Footer = () => {
   ];
 
   return (
-    <div className="footer">
+    <div className="footer" data-aos="fade-up" data-aos-duration="800">
       <div className="main-div">
         <div className="footer-main-section">
           <h4>Alter Sppace</h4>

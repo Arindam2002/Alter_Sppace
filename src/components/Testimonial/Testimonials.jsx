@@ -25,6 +25,7 @@ const TestimonialCard = ({ img, name, address, testimonial, active }) => {
 
 const Testimonials = ({ testimonials }) => {
   const [currentIndex, setCurrentIndex] = useState(1);
+  const [isTransitioning, setIsTransitioning] = useState(false);
   const timeoutRef = useRef(null);
   const testimonialCount = testimonials.length;
   const extendedTestimonials = [
@@ -42,56 +43,51 @@ const Testimonials = ({ testimonials }) => {
   useEffect(() => {
     resetTimeout();
     timeoutRef.current = setTimeout(() => {
-      setCurrentIndex((prevIndex) => {
-        if (prevIndex === extendedTestimonials.length - 1) {
-          return 1;
-        }
-        return prevIndex + 1;
-      });
-    }, 3000);
+      nextTestimonial();
+    }, 2500);
 
     return () => {
       resetTimeout();
     };
-  }, [currentIndex, extendedTestimonials.length]);
+  }, [currentIndex]);
 
   const prevTestimonial = () => {
     setCurrentIndex((prevIndex) =>
-      prevIndex === 1 ? extendedTestimonials.length - 2 : prevIndex - 1
+      prevIndex === 0 ? extendedTestimonials.length - 2 : prevIndex - 1
     );
-    console.log(currentIndex);
+    setIsTransitioning(true);
   };
 
   const nextTestimonial = () => {
     setCurrentIndex((prevIndex) =>
       prevIndex === extendedTestimonials.length - 1 ? 1 : prevIndex + 1
     );
-    console.log(currentIndex);
+    setIsTransitioning(true);
   };
 
-  useEffect(() => {
+  const handleTransitionEnd = () => {
+    setIsTransitioning(false);
     if (currentIndex === 0) {
-      setTimeout(() => {
-        setCurrentIndex(extendedTestimonials.length - 2);
-      }, 0);
+      setCurrentIndex(extendedTestimonials.length - 2);
     } else if (currentIndex === extendedTestimonials.length - 1) {
-      setTimeout(() => {
-        setCurrentIndex(1);
-      }, 0);
+      setCurrentIndex(1);
     }
-  }, [currentIndex, extendedTestimonials.length]);
+  };
 
   return (
     <div className="testimonial">
       <h2 className="testimonial-heading">What the People Think About Us</h2>
       <div className="testimonial-cards">
         <div
-          className="testimonial-cards-container"
+          className={`testimonial-cards-container ${
+            isTransitioning ? '' : 'no-transition'
+          }`}
           style={{
             transform: `translateX(-${currentIndex * 340}px)`,
-            transition: 'transform 0.5s ease',
+            transition: isTransitioning ? 'transform 0.5s ease' : 'none',
             width: `${extendedTestimonials.length * 340}px`,
           }}
+          onTransitionEnd={handleTransitionEnd}
         >
           {extendedTestimonials.map((testimonial, index) => (
             <TestimonialCard

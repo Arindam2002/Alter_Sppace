@@ -1,7 +1,7 @@
 .testimonial {
   position: relative;
   overflow: hidden;
-  max-width: 1000px;
+  max-width: 800px;
   padding: 20px;
   margin: 0 auto;
 
@@ -18,8 +18,11 @@
   .testimonial-cards-container {
     display: flex;
     gap: 20px;
-    transition: transform 0.5s ease;
     width: 100%;
+
+    &.no-transition {
+      transition: none;
+    }
   }
 
   .controls {
@@ -28,7 +31,7 @@
     display: flex;
     justify-content: space-between;
     top: 50%;
-    transform: translateY(50px);
+    transform: translateY(-50%);
 
     button {
       background: transparent;
