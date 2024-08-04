@@ -6,7 +6,7 @@ import './TestimonialCard.scss';
 
 const TestimonialCard = ({ img, name, address, testimonial, active }) => {
   return (
-    <div className={`testimonial-card ${active ? 'active' : ''}`}>
+    <div className="testimonial-card">
       <div className="testimonial-card-header">
         <img
           src={`/assets/${img}`}
@@ -44,7 +44,7 @@ const Testimonials = ({ testimonials }) => {
     resetTimeout();
     timeoutRef.current = setTimeout(() => {
       nextTestimonial();
-    }, 2500);
+    }, 3000);
 
     return () => {
       resetTimeout();
@@ -53,14 +53,14 @@ const Testimonials = ({ testimonials }) => {
 
   const prevTestimonial = () => {
     setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? extendedTestimonials.length - 2 : prevIndex - 1
+      prevIndex === 1 ? extendedTestimonials.length - 2 : prevIndex - 1
     );
     setIsTransitioning(true);
   };
 
   const nextTestimonial = () => {
     setCurrentIndex((prevIndex) =>
-      prevIndex === extendedTestimonials.length - 1 ? 1 : prevIndex + 1
+      prevIndex === extendedTestimonials.length - 2 ? 1 : prevIndex + 1
     );
     setIsTransitioning(true);
   };
@@ -83,9 +83,9 @@ const Testimonials = ({ testimonials }) => {
             isTransitioning ? '' : 'no-transition'
           }`}
           style={{
-            transform: `translateX(-${currentIndex * 340}px)`,
+            transform: `translateX(-${currentIndex * 100}%)`,
             transition: isTransitioning ? 'transform 0.5s ease' : 'none',
-            width: `${extendedTestimonials.length * 340}px`,
+            width: `${extendedTestimonials.length * 100}%`,
           }}
           onTransitionEnd={handleTransitionEnd}
         >

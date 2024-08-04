@@ -48,8 +48,15 @@ body {
   background-position: center;
 
   height: 100vh;
+  position: relative;
 
   .navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+
     .navbar-items {
       color: #fff;
       font-weight: 400;
@@ -64,6 +71,8 @@ body {
     // align-items: center;
     justify-content: center;
     padding: 20px 40px;
+    position: relative;
+    z-index: 1;
 
     .hero-section-contents-main {
       // margin-left: 200px;
@@ -118,7 +127,6 @@ body {
         h1 {
           margin-top: 40px;
           font-size: 40px;
-          z-index: -1;
         }
         p {
           font-size: 16px;

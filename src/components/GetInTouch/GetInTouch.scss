@@ -1,113 +1,132 @@
 .get-in-touch {
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 50px auto;
+  padding: 50px 0;
+  background-color: #fff;
 
-  .get-in-touch-ccc {
+  .get-in-touch-container {
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    box-shadow: 0 10px 30px rgba(248, 149, 45, 0.2);
+    box-shadow: 10px 0px 30px rgba(248, 149, 45, 0.2);
+    border-radius: 15px;
+    overflow: hidden;
 
-    max-width: 900px;
-    margin: 0 30px;
+    .image-section {
+      flex: 1;
+      position: relative;
+      min-height: 500px;
 
-    border-radius: 100px 0px;
-    background: var(--logo-blue, #10528e);
+      .get-in-touch-img {
+        object-position: center;
+      }
 
-    .get-in-touch-img {
-      // max-width: 100%;
-      height: 400px;
-      width: auto;
-      border-radius: 100px 0px 0px 0px;
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(16, 82, 142, 0.8);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 40px;
+        color: white;
+        text-align: center;
+
+        h2 {
+          font-size: 36px;
+          margin-bottom: 20px;
+          font-family: 'DM Serif Display', serif;
+        }
+
+        p {
+          font-size: 18px;
+          font-family: 'Jost', sans-serif;
+        }
+      }
     }
 
-    .get-in-touch-content {
+    .form-section {
+      flex: 1;
+      background-color: white;
+      padding: 40px;
+
       h2 {
-        color: #fff;
-        text-align: center;
-        font-family: 'DM Serif Display';
-        font-size: 50px;
-        font-weight: 400;
-        line-height: 125%;
+        font-size: 32px;
+        margin-bottom: 30px;
+        color: #f8952d; // Updated to darker orange
+        font-family: 'DM Serif Display', serif;
       }
 
       form {
-        width: 100%;
         display: flex;
-        flex-wrap: wrap;
         flex-direction: column;
         gap: 20px;
-        padding: 20px;
-        max-width: 600px;
-        min-height: 300px;
 
         .form-group {
-          display: flex;
-          flex-wrap: wrap;
-          gap: 20px;
+          position: relative;
 
-          .form-input,
-          .form-textarea {
-            flex: 1;
-            padding: 10px;
-            border: 1px solid #e5e7eb;
-            border-radius: 4px;
+          .input-icon {
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #f8952d; // Updated to darker orange
+          }
+
+          .textarea-icon {
+            top: 25px;
+            transform: none;
+          }
+
+          input,
+          textarea {
+            width: 100%;
+            padding: 15px 15px 15px 45px;
+            border: 1px solid #ffb469; // Updated to lighter orange
+            border-radius: 8px;
             font-size: 16px;
-            outline: none;
+            transition: border-color 0.3s;
 
             &:focus {
-              border-color: #6366f1;
+              outline: none;
+              border-color: #f8952d; // Updated to darker orange
             }
           }
 
-          .form-textarea {
-            height: 80px;
+          textarea {
+            height: 120px;
             resize: vertical;
+          }
+        }
+
+        .submit-button {
+          background-color: rgb(15, 95, 169);
+          color: white;
+          border: none;
+          padding: 15px 30px;
+          font-size: 18px;
+          border-radius: 8px;
+          cursor: pointer;
+          transition: background-color 0.3s;
+
+          &:hover {
+            background-color: rgba(12, 71, 126);
           }
         }
       }
     }
+  }
 
-    .submit-button {
-      padding: 10px 20px;
-      background-color: #6366f1;
-      color: white;
-      border: none;
-      border-radius: 8px;
-      font-size: 16px;
-      cursor: pointer;
-      border-radius: 0 0 70px 0;
-      transition: background-color 0.3s;
+  @media (max-width: 768px) {
+    .get-in-touch-container {
+      flex-direction: column;
 
-      &:hover {
-        background-color: #4f46e5;
-      }
-    }
-
-    @media screen and (max-width: 860px) {
-      flex-wrap: wrap;
-      max-width: 630px;
-
-      .get-in-touch-ccc {
-        .get-in-touch-img {
-          width: 630px;
-          height: auto;
-        }
-      }
-    }
-
-    @media screen and (max-width: 470px) {
-      .get-in-touch-ccc {
-        .get-in-touch-img {
-          width: 630px;
-          height: auto;
-        }
-
-        .get-in-touch-content {
-          height: 530px;
-        }
+      .image-section {
+        min-height: 300px;
       }
     }
   }

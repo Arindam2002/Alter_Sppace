@@ -19,11 +19,21 @@ const Navbar = () => {
       <img src={logo.src} alt="Logo" className="navbar-logo" />
 
       <div className={`navbar-items ${isOpen ? 'open' : ''}`}>
-        <a href="/">Home</a>
-        <a href="/#about">About Us</a>
-        <a href="/#features">Features</a>
-        <a href="/#services">Services</a>
-        <Link href="/gallery">Gallery</Link>
+        <a href="/" onClick={toggleMenu}>
+          Home
+        </a>
+        <a href="/#about" onClick={toggleMenu}>
+          About Us
+        </a>
+        <a href="/#features" onClick={toggleMenu}>
+          Features
+        </a>
+        <a href="/#services" onClick={toggleMenu}>
+          Services
+        </a>
+        <Link href="/gallery" onClick={toggleMenu}>
+          Gallery
+        </Link>
       </div>
 
       <div className="hamburger" onClick={toggleMenu}>
