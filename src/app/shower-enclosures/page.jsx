@@ -30,7 +30,7 @@ const ShowerEnclosures = () => {
         </div>
       </section>
 
-      <div className="shower-video">
+      {/* <div className="shower-video">
         <div className="shower-video-content">
           <iframe
             src="https://www.youtube.com/embed/RYldQ-HKZdg"
@@ -40,7 +40,7 @@ const ShowerEnclosures = () => {
             title="Shower Enclosures Video"
           ></iframe>
         </div>
-      </div>
+      </div> */}
 
       <Footer />
     </div>

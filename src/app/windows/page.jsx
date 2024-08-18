@@ -61,7 +61,7 @@ const Windows = () => {
         </div>
       </section>
 
-      <div className="windows-video">
+      {/* <div className="windows-video">
         <div className="windows-video-content">
           <iframe
             src="https://www.youtube.com/embed/RYldQ-HKZdg"
@@ -71,7 +71,7 @@ const Windows = () => {
             title="Windows Video"
           ></iframe>
         </div>
-      </div>
+      </div> */}
 
       <Footer />
     </div>

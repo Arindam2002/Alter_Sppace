@@ -4,8 +4,8 @@ import Navbar from '@/components/Navbar/Navbar';
 import Footer from '@/components/Footer/Footer';
 import './gallery.scss';
 
-import services1 from '/public/assets/services1.png';
-import services2 from '/public/assets/services2.png';
+import services1 from '/public/assets/services1.jpg';
+import services2 from '/public/assets/services2.jpg';
 
 const Gallery = () => {
   return (

@@ -59,7 +59,7 @@ const GlassPartition = () => {
         </div>
       </section>
 
-      <div className="video">
+      {/* <div className="video">
         <div className="video-content">
           <iframe
             src="https://www.youtube.com/embed/RYldQ-HKZdg"
@@ -69,7 +69,7 @@ const GlassPartition = () => {
             title="Glass Partitions Video"
           ></iframe>
         </div>
-      </div>
+      </div> */}
 
       <Footer />
     </div>

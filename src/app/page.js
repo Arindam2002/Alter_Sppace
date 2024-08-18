@@ -8,8 +8,8 @@ import GetInTouch from '@/components/GetInTouch/GetInTouch';
 import Navbar from '@/components/Navbar/Navbar';
 import Footer from '@/components/Footer/Footer';
 
-import mainimg from '/public/assets/mainimg.png';
-import hero from '/public/assets/hero.png';
+import mainimg from '/public/assets/mainimg.jpg';
+import hero from '/public/assets/hero.jpg';
 
 import { FaSearch, FaLightbulb, FaThLarge } from 'react-icons/fa';
 import { FaIndianRupeeSign } from 'react-icons/fa6';

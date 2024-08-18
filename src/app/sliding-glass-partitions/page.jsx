@@ -2,9 +2,9 @@
 import Footer from '@/components/Footer/Footer';
 import Navbar from '@/components/Navbar/Navbar';
 
-import glass1 from '/public/assets/glass1.png';
-import glass2 from '/public/assets/glass2.png';
-import glass3 from '/public/assets/glass3.png';
+import glass1 from '/public/assets/glass1.jpg';
+import glass2 from '/public/assets/glass2.jpg';
+import glass3 from '/public/assets/glass3.jpg';
 
 import './sliding-glass.scss';
 
@@ -62,7 +62,7 @@ const SlidingGlassPartition = () => {
         </div>
       </section>
 
-      <div className="sliding-video">
+      {/* <div className="sliding-video">
         <div className="sliding-video-content">
           <iframe
             src="https://www.youtube.com/embed/RYldQ-HKZdg"
@@ -72,7 +72,7 @@ const SlidingGlassPartition = () => {
             title="Glass Partitions Video"
           ></iframe>
         </div>
-      </div>
+      </div> */}
 
       <Footer />
     </div>

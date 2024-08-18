@@ -45,7 +45,7 @@ const Railings = () => {
         </div>
       </section>
 
-      <div className="railings-video">
+      {/* <div className="railings-video">
         <div className="railings-video-content">
           <iframe
             src="https://www.youtube.com/embed/RYldQ-HKZdg"
@@ -55,7 +55,7 @@ const Railings = () => {
             title="Railings Video"
           ></iframe>
         </div>
-      </div>
+      </div> */}
 
       <Footer />
     </div>
