@@ -6,19 +6,23 @@ import './TestimonialCard.scss';
 
 const TestimonialCard = ({ img, name, address, testimonial, active }) => {
   return (
-    <div className="testimonial-card">
-      <div className="testimonial-card-header">
-        <img
-          src={`/assets/${img}`}
-          alt="user"
-          className="testimonial-card-img"
-        />
-        <div className="testimonial-card-info">
-          <h2 className="testimonial-card-name">{name}</h2>
-          <p className="testimonial-card-address">{address}</p>
+    <div className={`testimonial-card ${active ? 'active' : ''}`}>
+      <div className="testimonial-card-content">
+        <div className="testimonial-card-header">
+          <img
+            src={`/assets/${img}`}
+            alt="user"
+            className="testimonial-card-img"
+          />
+          <div className="testimonial-card-info">
+            <h2 className="testimonial-card-name">{name}</h2>
+            <p className="testimonial-card-address">{address}</p>
+          </div>
+        </div>
+        <div className="testimonial-card-text-wrapper">
+          <p className="testimonial-card-text">{testimonial}</p>
         </div>
       </div>
-      <p className="testimonial-card-text">{testimonial}</p>
     </div>
   );
 };
