@@ -57,7 +57,7 @@
       h2 {
         font-size: 32px;
         margin-bottom: 30px;
-        color: #f8952d; // Updated to darker orange
+        color: #f8952d;
         font-family: 'DM Serif Display', serif;
       }
 
@@ -74,7 +74,7 @@
             left: 15px;
             top: 50%;
             transform: translateY(-50%);
-            color: #f8952d; // Updated to darker orange
+            color: #f8952d;
           }
 
           .textarea-icon {
@@ -86,14 +86,14 @@
           textarea {
             width: 100%;
             padding: 15px 15px 15px 45px;
-            border: 1px solid #ffb469; // Updated to lighter orange
+            border: 1px solid #ffb469;
             border-radius: 8px;
             font-size: 16px;
             transition: border-color 0.3s;
 
             &:focus {
               outline: none;
-              border-color: #f8952d; // Updated to darker orange
+              border-color: #f8952d;
             }
           }
 

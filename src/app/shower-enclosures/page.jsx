@@ -2,7 +2,7 @@
 import Footer from '@/components/Footer/Footer';
 import Navbar from '@/components/Navbar/Navbar';
 
-import glass1 from '/public/assets/glass1.png';
+import showserenclosure1 from '/public/assets/showserenclosure1.jpg';
 
 import './showerenclosures.scss';
 
@@ -26,7 +26,7 @@ const ShowerEnclosures = () => {
               offering both elegance and practicality.
             </p>
           </div>
-          <img src={glass1.src} alt="Shower Enclosures" />
+          <img src={showserenclosure1.src} alt="Shower Enclosures" />
         </div>
       </section>
 

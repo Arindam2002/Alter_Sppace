@@ -24,7 +24,7 @@ const GetInTouch = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const mailtoLink = `mailto:info@altersppace.com;altersppace@gmail.com?subject=Contact from ${formData.firstName} ${formData.lastName}&body=First Name: ${formData.firstName}%0D%0ALast Name: ${formData.lastName}%0D%0AContact Number: ${formData.contactNumber}%0D%0AEmail: ${formData.email}%0D%0AMessage: ${formData.message}`;
+    const mailtoLink = `mailto:info@altersppace.com?subject=Contact from ${formData.firstName} ${formData.lastName}&body=First Name: ${formData.firstName}%0D%0ALast Name: ${formData.lastName}%0D%0AContact Number: ${formData.contactNumber}%0D%0AEmail: ${formData.email}%0D%0AMessage: ${formData.message}`;
     window.location.href = mailtoLink;
   };
 

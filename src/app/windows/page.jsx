@@ -2,8 +2,8 @@
 import Footer from '@/components/Footer/Footer';
 import Navbar from '@/components/Navbar/Navbar';
 
-import glass1 from '/public/assets/glass1.png';
-import glass2 from '/public/assets/glass2.png';
+import windows1 from '/public/assets/windows1.jpg';
+import windows2 from '/public/assets/windows2.jpeg';
 
 import './windows.scss';
 
@@ -40,7 +40,7 @@ const Windows = () => {
               <li>Suitable for low to moderate burglary risk areas</li>
             </ul>
           </div>
-          <img src={glass1.src} alt="Slimline Aluminium Windows" />
+          <img src={windows1.src} alt="Slimline Aluminium Windows" />
         </div>
       </section>
 
@@ -57,7 +57,7 @@ const Windows = () => {
               variety of styles to suit any architectural design.
             </p>
           </div>
-          <img src={glass2.src} alt="UPVC Windows" />
+          <img src={windows2.src} alt="UPVC Windows" />
         </div>
       </section>
 

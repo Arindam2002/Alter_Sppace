@@ -2,8 +2,8 @@
 import Footer from '@/components/Footer/Footer';
 import Navbar from '@/components/Navbar/Navbar';
 
-import glass1 from '/public/assets/glass1.png';
-import glass2 from '/public/assets/glass2.png';
+import railings1 from '/public/assets/railings1.jpg';
+import railings2 from '/public/assets/railings2.jpg';
 
 import './railings.scss';
 
@@ -27,7 +27,7 @@ const Railings = () => {
               terraces.
             </p>
           </div>
-          <img src={glass1.src} alt="Aluminium & Glass Railings" />
+          <img src={railings1.src} alt="Aluminium & Glass Railings" />
         </div>
       </section>
 
@@ -41,7 +41,7 @@ const Railings = () => {
               perfect for both indoor and outdoor applications.
             </p>
           </div>
-          <img src={glass2.src} alt="Stainless Steel Railings" />
+          <img src={railings2.src} alt="Stainless Steel Railings" />
         </div>
       </section>
 

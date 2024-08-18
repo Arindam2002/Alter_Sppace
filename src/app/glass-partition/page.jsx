@@ -2,8 +2,8 @@
 import Footer from '@/components/Footer/Footer';
 import Navbar from '@/components/Navbar/Navbar';
 
-import glass1 from '/public/assets/glass1.png';
-import glass2 from '/public/assets/glass2.png';
+import glasspartition1 from '/public/assets/glasspartition1.jpeg';
+import glasspartition2 from '/public/assets/glasspartition2.jpeg';
 
 import './glass.scss';
 
@@ -34,7 +34,7 @@ const GlassPartition = () => {
               <li>Aluminium Twin Profiles</li>
             </ul>
           </div>
-          <img src={glass1.src} alt="" />
+          <img src={glasspartition1.src} alt="" />
         </div>
       </section>
 
@@ -55,7 +55,7 @@ const GlassPartition = () => {
               <li>Style Door (42mm x 75mm)</li>
             </ul>
           </div>
-          <img src={glass2.src} alt="" />
+          <img src={glasspartition2.src} alt="" />
         </div>
       </section>
 
