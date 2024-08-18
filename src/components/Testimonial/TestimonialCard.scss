@@ -1,6 +1,6 @@
 .testimonial {
   position: relative;
-  overflow: hidden;
+  overflow: visible;
   max-width: 800px;
   padding: 20px;
   margin: 0 auto;
@@ -23,11 +23,11 @@
   .testimonial-cards {
     overflow: hidden;
     position: relative;
+    border-radius: 20px;
 
     .testimonial-cards-container {
       display: flex;
       height: auto;
-      border-radius: 20px;
       transition: transform 0.5s ease;
 
       &.no-transition {
@@ -38,17 +38,18 @@
 
   .controls {
     position: absolute;
-    width: 100%;
+    width: calc(100% + 100px);
+    left: -50px;
     display: flex;
     justify-content: space-between;
-    top: 50%;
-    transform: translateY(-50%);
+    align-items: center;
+    top: 60%;
     pointer-events: none;
+    // border: 2px solid black;
 
     @media (max-width: 768px) {
-      top: auto;
-      bottom: 10px;
-      transform: none;
+      width: calc(100% + 60px);
+      left: -30px;
     }
 
     button {

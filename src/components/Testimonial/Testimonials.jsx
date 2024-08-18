@@ -20,7 +20,11 @@ const TestimonialCard = ({ img, name, address, testimonial, active }) => {
           </div>
         </div>
         <div className="testimonial-card-text-wrapper">
-          <p className="testimonial-card-text">{testimonial}</p>
+          <p className="testimonial-card-text">
+            {testimonial.length > 300
+              ? `${testimonial.substring(0, 297)}...`
+              : testimonial}
+          </p>
         </div>
       </div>
     </div>
