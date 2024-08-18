@@ -11,6 +11,7 @@
     box-shadow: 10px 0px 30px rgba(248, 149, 45, 0.2);
     border-radius: 15px;
     overflow: hidden;
+    border-top-left-radius: 200px;
 
     .image-section {
       flex: 1;
@@ -66,8 +67,18 @@
         flex-direction: column;
         gap: 20px;
 
+        .form-row {
+          display: flex;
+          gap: 20px;
+        }
+
         .form-group {
           position: relative;
+          flex: 1;
+
+          &.half-width {
+            width: 50%;
+          }
 
           .input-icon {
             position: absolute;
@@ -124,9 +135,25 @@
   @media (max-width: 768px) {
     .get-in-touch-container {
       flex-direction: column;
+      border-top-left-radius: 15px;
 
       .image-section {
         min-height: 300px;
+      }
+
+      .form-section {
+        form {
+          .form-row {
+            flex-direction: column;
+            gap: 20px;
+          }
+
+          .form-group {
+            &.half-width {
+              width: 100%;
+            }
+          }
+        }
       }
     }
   }

@@ -34,7 +34,7 @@ const GetInTouch = () => {
         <div className="image-section">
           <Image
             src={getintouch}
-            alt="get in touch"
+            alt="Get in Touch"
             layout="fill"
             objectFit="cover"
             className="get-in-touch-img"
@@ -49,57 +49,61 @@ const GetInTouch = () => {
         <div className="form-section">
           <h2>Get in Touch</h2>
           <form onSubmit={handleSubmit}>
-            <div className="form-group">
-              <FaUser className="input-icon" />
-              <input
-                type="text"
-                name="firstName"
-                placeholder="First Name"
-                value={formData.firstName}
-                onChange={handleChange}
-                required
-              />
+            <div className="form-row">
+              <div className="form-group half-width">
+                <FaUser className="input-icon" />
+                <input
+                  type="text"
+                  name="firstName"
+                  value={formData.firstName}
+                  onChange={handleChange}
+                  placeholder="First Name"
+                  required
+                />
+              </div>
+              <div className="form-group half-width">
+                <FaUser className="input-icon" />
+                <input
+                  type="text"
+                  name="lastName"
+                  value={formData.lastName}
+                  onChange={handleChange}
+                  placeholder="Last Name"
+                  required
+                />
+              </div>
             </div>
-            <div className="form-group">
-              <FaUser className="input-icon" />
-              <input
-                type="text"
-                name="lastName"
-                placeholder="Last Name"
-                value={formData.lastName}
-                onChange={handleChange}
-                required
-              />
-            </div>
-            <div className="form-group">
-              <FaPhone className="input-icon" />
-              <input
-                type="text"
-                name="contactNumber"
-                placeholder="Contact Number"
-                value={formData.contactNumber}
-                onChange={handleChange}
-                required
-              />
-            </div>
-            <div className="form-group">
-              <FaEnvelope className="input-icon" />
-              <input
-                type="email"
-                name="email"
-                placeholder="Email"
-                value={formData.email}
-                onChange={handleChange}
-                required
-              />
+            <div className="form-row">
+              <div className="form-group half-width">
+                <FaPhone className="input-icon" />
+                <input
+                  type="tel"
+                  name="contactNumber"
+                  value={formData.contactNumber}
+                  onChange={handleChange}
+                  placeholder="Contact Number"
+                  required
+                />
+              </div>
+              <div className="form-group half-width">
+                <FaEnvelope className="input-icon" />
+                <input
+                  type="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  placeholder="Email Address"
+                  required
+                />
+              </div>
             </div>
             <div className="form-group">
               <FaPen className="input-icon textarea-icon" />
               <textarea
                 name="message"
-                placeholder="Message"
                 value={formData.message}
                 onChange={handleChange}
+                placeholder="Your Message"
                 required
               ></textarea>
             </div>
