@@ -1,10 +1,9 @@
-import React from 'react';
-
 import {
   LiaFacebook,
   LiaInstagram,
   LiaLinkedin,
   LiaYoutube,
+  LiaWhatsapp,
 } from 'react-icons/lia';
 
 import './Footer.scss';
@@ -38,28 +37,42 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <LiaFacebook className="social-icons-logo" color="#F8952D" />
+              <LiaFacebook className="social-icons-logo" />
             </a>
             <a
               href="https://www.instagram.com/altersppacesolutions?igsh=MTlnYnBjNDZrbGY5aQ=="
               target="_blank"
               rel="noopener noreferrer"
             >
-              <LiaInstagram className="social-icons-logo" color="#F8952D" />
+              <LiaInstagram className="social-icons-logo" />
             </a>
             <a
               href="https://www.linkedin.com/in/altersppacesolutions?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <LiaLinkedin className="social-icons-logo" color="#F8952D" />
+              <LiaLinkedin className="social-icons-logo" />
             </a>
             <a
               href="https://youtube.com/@altersppace4159?si=_LzuHzp352-2lYYI"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <LiaYoutube className="social-icons-logo" color="#F8952D" />
+              <LiaYoutube className="social-icons-logo" />
+            </a>
+            <a
+              href="https://wa.me/918767078588"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <LiaWhatsapp className="social-icons-logo" />
+            </a>
+            <a
+              href="https://wa.me/918208235129"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <LiaWhatsapp className="social-icons-logo" />
             </a>
           </div>
         </div>
@@ -92,6 +105,9 @@ const Footer = () => {
           </p>
           <p>
             <a href="tel:+918767078588">+91 8767078588</a>
+          </p>
+          <p>
+            <a href="tel:+918208235129">+91 8208235129</a>
           </p>
         </div>
       </div>

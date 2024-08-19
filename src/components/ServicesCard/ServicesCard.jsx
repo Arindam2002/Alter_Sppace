@@ -9,7 +9,13 @@ const ServicesCard = ({ index, img, title, where }) => {
       <div
         className={`services-img-container ${index % 2 === 0 ? 'even' : 'odd'}`}
       >
-        <img src={`/assets/${img}`} alt={title} className="services-card-img" />
+        <Link href={where}>
+          <img
+            src={`/assets/${img}`}
+            alt={title}
+            className="services-card-img"
+          />
+        </Link>
       </div>
 
       <div className="content">

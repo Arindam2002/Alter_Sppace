@@ -29,7 +29,7 @@
         left: 0;
         right: 0;
         bottom: 0;
-        background: rgba(16, 82, 142, 0.8);
+        background: rgba(0, 0, 0, 0.4);
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -38,7 +38,6 @@
         color: white;
         text-align: center;
         border-top-left-radius: 200px;
-        // border-bottom-right-radius: 200px;
 
         h2 {
           font-size: 36px;
@@ -101,7 +100,7 @@
           textarea {
             width: 100%;
             padding: 15px 15px 15px 45px;
-            border: 1px solid #ffb469;
+            border: 1px solid #f8952d;
             border-radius: 8px;
             font-size: 16px;
             transition: border-color 0.3s;
@@ -120,7 +119,7 @@
         }
 
         .submit-button {
-          background-color: rgb(15, 95, 169);
+          background-color: #c3770f;
           color: white;
           border: none;
           padding: 15px 30px;
@@ -131,10 +130,16 @@
           transition: background-color 0.3s;
 
           &:hover {
-            background-color: rgba(12, 71, 126);
+            background-color: #e1952d;
           }
         }
       }
+    }
+  }
+
+  @media (max-width: 1250px) {
+    .get-in-touch-container {
+      margin: 0 20px;
     }
   }
 
@@ -149,7 +154,6 @@
 
         .overlay {
           border-top-left-radius: 100px;
-          // border-bottom-right-radius: 0;
         }
       }
 
