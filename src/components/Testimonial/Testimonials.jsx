@@ -52,7 +52,7 @@ const Testimonials = ({ testimonials }) => {
     resetTimeout();
     timeoutRef.current = setTimeout(() => {
       nextTestimonial();
-    }, 3000);
+    }, 4000);
 
     return () => {
       resetTimeout();

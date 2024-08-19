@@ -31,6 +31,8 @@
 
         img {
           transition: all 0.3s;
+          height: 300px;
+          width: 300px;
           &:hover {
             transform: scale(1.1);
             filter: brightness(1);
