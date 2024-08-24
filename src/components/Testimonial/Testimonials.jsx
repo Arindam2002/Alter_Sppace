@@ -110,10 +110,10 @@ const Testimonials = ({ testimonials }) => {
         </div>
       </div>
       <div className="controls">
-        <button onClick={prevTestimonial}>
+        <button onClick={prevTestimonial} aria-label="Previous testimonial">
           <GrLinkPrevious />
         </button>
-        <button onClick={nextTestimonial}>
+        <button onClick={nextTestimonial} aria-label="Next testimonial">
           <GrLinkNext />
         </button>
       </div>
