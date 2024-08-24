@@ -61,7 +61,7 @@
         font-size: 40px;
         margin-bottom: 30px;
         text-align: center;
-        color: #f8952d;
+        color: #121212;
         font-family: 'DM Serif Display', serif;
       }
 
@@ -88,26 +88,23 @@
             left: 15px;
             top: 50%;
             transform: translateY(-50%);
-            color: #f8952d;
-          }
-
-          .textarea-icon {
-            top: 25px;
-            transform: none;
+            color: #333; /* Darker shade of black */
           }
 
           input,
           textarea {
             width: 100%;
             padding: 15px 15px 15px 45px;
-            border: 1px solid #f8952d;
+            border: 1px solid #333; /* Darker shade of black */
             border-radius: 8px;
             font-size: 16px;
+            background-color: #fff; /* White background */
+            color: #000; /* Black text */
             transition: border-color 0.3s;
 
             &:focus {
               outline: none;
-              border-color: #f8952d;
+              border-color: #000; /* Black border on focus */
             }
           }
 

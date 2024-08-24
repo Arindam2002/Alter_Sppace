@@ -19,7 +19,6 @@ export default function Home() {
     <div>
       <div id="home" className="hero-section">
         <Navbar />
-
         <div
           className="hero-section-contents"
           data-aos="fade-in"

@@ -6,7 +6,24 @@
   gap: 30px;
   padding: 0 40px;
   z-index: 999;
-  background-color: rgba(50, 48, 50, 0.5);
+  transition: all 0.3s;
+
+  &.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    .navbar-items {
+      color: #121212;
+    }
+
+    .hamburger {
+      color: #121212;
+    }
+  }
 
   .navbar-logo {
     max-height: 50px;
