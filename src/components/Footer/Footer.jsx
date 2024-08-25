@@ -67,13 +67,6 @@ const Footer = () => {
             >
               <LiaWhatsapp className="social-icons-logo" />
             </a>
-            <a
-              href="https://wa.me/918208235129"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <LiaWhatsapp className="social-icons-logo" />
-            </a>
           </div>
         </div>
 

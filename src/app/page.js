@@ -8,7 +8,7 @@ import GetInTouch from '@/components/GetInTouch/GetInTouch';
 import Navbar from '@/components/Navbar/Navbar';
 import Footer from '@/components/Footer/Footer';
 
-import mainimg from '/public/assets/mainimg.jpg';
+import mainimg from '../../public/assets/mainimg.jpg';
 import hero from '/public/assets/hero.jpg';
 
 import { FaSearch, FaLightbulb, FaThLarge } from 'react-icons/fa';
@@ -41,8 +41,8 @@ export default function Home() {
         </div>
       </div>
       <div id="about" className="main-content">
-        <Image
-          src={mainimg}
+        <img
+          src={mainimg.src}
           alt="mainimg"
           className="main-image"
           width={500}

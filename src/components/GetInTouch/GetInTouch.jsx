@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import { FaUser, FaEnvelope, FaPhone, FaPen } from 'react-icons/fa';
 import './GetInTouch.scss';
-import getintouch from '/public/assets/getintouch.jpg';
+import getintouch from '../../../public/assets/getintouch.jpg';
 
 const GetInTouch = () => {
   const [formData, setFormData] = useState({
@@ -32,8 +32,8 @@ const GetInTouch = () => {
     <div className="get-in-touch">
       <div className="get-in-touch-container">
         <div className="image-section">
-          <Image
-            src={getintouch}
+          <img
+            src={getintouch.src}
             alt="Get in Touch"
             layout="fill"
             objectFit="cover"
